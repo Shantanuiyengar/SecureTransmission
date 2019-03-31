@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".HOME">
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/toggleButton1"
+        android:layout_marginStart="0dp"
+        android:layout_alignParentStart="true" />
+    <TextView android:textColor="#fff"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/progressBar1"
+        android:layout_marginEnd="207dp"
+        android:layout_alignParentEnd="true"/>
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="94dp"
+        android:layout_height="87dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/mic"
+        android:textOff=""
+        android:textOn="" />
+
+    <ToggleButton
+        android:id="@+id/bulb_toggle"
+        android:layout_width="65dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/bulb"
+        android:clickable="false"
+        android:textOff=""
+        android:textOn="" />
+
+    <ToggleButton
+        android:id="@+id/fan_toggle"
+        android:layout_width="65dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/bulb_toggle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/fan"
+        android:clickable="false"
+        android:textOff=""
+        android:textOn="" />
+
+    <TextView
+        android:id="@+id/bulb_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="38dp"
+        android:layout_toEndOf="@+id/bulb_toggle"
+        android:text="@string/off"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/fan_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="142dp"
+        android:layout_toEndOf="@+id/bulb_toggle"
+        android:text="@string/off"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="24sp" />
+
+    <TextView
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/touch_to_speak"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fan_text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/my_button_bg"
+        android:onClick="startSecureChat"
+        android:padding="15dp"
+        android:text="SECURE CHAT"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
